@@ -1,0 +1,185 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #f96363;
+}
+
+/* src/App.css */
+
+/* Gradient Background */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: rgb(157, 150, 150);
+  animation: backgroundShift 6s infinite alternate;
+}
+
+/* Animation for Background */
+@keyframes backgroundShift {
+  0% {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  }
+  50% {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+  }
+  100% {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  }
+}
+
+/* Styling for the App Container */
+.app-container {
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: rgba(106, 31, 31, 0.8);
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Styling for Slots and Button */
+.availability-section {
+  margin-top: 20px;
+}
+
+.slot-button {
+  background-color: #ff7e5f;
+  color: rgb(232, 62, 62);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+.slot-button:hover {
+  background-color: #feb47b;
+}
+
+.slot-button.booked {
+  background-color: #ed2828;
+  cursor: not-allowed;
+}
+
+.slots-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+}
+/* src/App.css */
+.app-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.availability-section {
+  margin-top: 20px;
+}
+
+.slot-button {
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(234, 242, 128);
+  border: 1px solid #9dede1;
+  cursor: pointer;
+}
+
+.slot-button.booked {
+  background-color: lightcoral;
+}
+
+.slot-button:disabled {
+  background-color: #ef96e2;
+  cursor: not-allowed;
+}
+
+.student-section,
+.instructor-section {
+  margin-top: 20px;
+}
+ 
+/* src/App.css */
+.instructor-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add-slot input {
+  padding: 5px;
+  margin: 5px;
+  width: 150px;
+}
+
+.add-slot button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.slot-item {
+  margin: 10px 0;
+}
+
+.slot-item button {
+  padding: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.slot-item button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
