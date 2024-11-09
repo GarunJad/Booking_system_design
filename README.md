@@ -38,14 +38,15 @@ Follow these steps to clone the repository and install all necessary dependencie
    For Backend (Node.js):
    If you have a separate backend folder, navigate to it and install dependencies.
 
-   ```bash
-   Copy code
-   cd server
-   npm install
+```bash
+cd server
+npm install
+```
+
    For Frontend (React):
    Go back to the root folder and install the frontend dependencies.
 
+   
    ```bash
-   Copy code
    cd ..
    npm install
