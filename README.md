@@ -16,7 +16,6 @@ This is a booking system where instructors can set their availability slots, and
 3. [Running the Backend](#running-the-backend)
 4. [Running the Frontend](#running-the-frontend)
 5. [Tech Stack](#tech-stack)
-6. [License](#license)
 
 ---
 
